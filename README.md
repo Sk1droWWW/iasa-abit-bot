@@ -1,8 +1,8 @@
 # Official bot for IASA abit chat
 
 
- Features:
+Features:
 
- -welcome message
- -FLOODwarning
+-welcome message
+-FLOODwarning
 
