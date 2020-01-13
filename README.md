@@ -3,6 +3,5 @@
 
 Features:
 
--welcome message
--FLOODwarning
+welcome message, FLOODwarning
 
