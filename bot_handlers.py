@@ -1,7 +1,7 @@
 import random
 
 from bot import bot 
-from text_constants import WELCOME_MESSAGE, FLOOD_MESSAGES
+from text_constants import WELCOME_MESSAGE, FLOOD_MESSAGES, HELP_MESSAGE
 
 
 message_storage = []
@@ -125,6 +125,10 @@ def welcome_message(message):
                 bot.send_message(message.chat.id, WELCOME_MESSAGE, 
                     parse_mode='HTML', disable_web_page_preview=True)
                 chat.set_counter(0)
+
+@bot.message_handler(commands=['help'])
+def help_message(message):
+    bot.reply_to(message, HELP_MESSAGE)
 
 
 if __name__ == '__main__':
